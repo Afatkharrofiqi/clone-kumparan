@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       flexDirection="column"
       justifyContent="flex-start"
     >
-      <Navigation />
+      <Navigation flex={'0'} />
       <Box
         h="100%"
         maxH="100vh"
