@@ -45,7 +45,7 @@ const TopBar: FunctionComponent = () => {
             >
               <HiOutlineSearch color="gray" />
             </InputLeftElement>
-            <Input placeholder="Enter amount" />
+            <Input placeholder="Cari di sini..." />
           </InputGroup>
         </Stack>
       </Stack>
