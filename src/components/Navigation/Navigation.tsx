@@ -1,5 +1,6 @@
 import { Box } from '@chakra-ui/react'
 import { FunctionComponent } from 'react'
+import MainMenu from './MainMenu'
 import TopBar from './TopBar'
 
 const Navigation: FunctionComponent = () => {
@@ -14,6 +15,7 @@ const Navigation: FunctionComponent = () => {
     >
       <Box w="100%" maxW="65vw">
         <TopBar />
+        <MainMenu />
       </Box>
     </Box>
   )

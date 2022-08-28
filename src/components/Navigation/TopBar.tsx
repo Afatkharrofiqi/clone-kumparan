@@ -61,19 +61,19 @@ const TopBar: FunctionComponent = () => {
             aria-label="home"
             bgColor={'transparent'}
             isRound
-            icon={<FiHome size="20" color="gray" />}
+            icon={<FiHome size="23" color="gray" />}
           />
           <IconButton
             aria-label="dark mode"
             bgColor={'transparent'}
             isRound
-            icon={<FiMoon size="20" color="gray" />}
+            icon={<FiMoon size="23" color="gray" />}
           />
           <IconButton
             aria-label="notification"
             bgColor={'transparent'}
             isRound
-            icon={<RiNotification2Line size="20" color="gray" />}
+            icon={<RiNotification2Line size="23" color="gray" />}
           />
         </Stack>
         <ButtonGroup size="sm">
