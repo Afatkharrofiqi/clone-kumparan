@@ -1,5 +1,6 @@
 import { Box } from '@chakra-ui/react'
 import { FunctionComponent } from 'react'
+import Container from '../Container/Container'
 import MainMenu from './MainMenu'
 import SubMenu from './SubMenu'
 import TopBar from './TopBar'
@@ -20,11 +21,11 @@ const Navigation: FunctionComponent<NavigationProps> = (
       justifyContent="center"
       {...props}
     >
-      <Box w="100%" maxW="65vw">
+      <Container>
         <TopBar />
         <MainMenu />
         <SubMenu />
-      </Box>
+      </Container>
     </Box>
   )
 }

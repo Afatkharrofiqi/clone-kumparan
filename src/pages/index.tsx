@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
+import Content from '../components/Content/Content'
 import Navigation from '../components/Navigation/Navigation'
 
 const Home: NextPage = () => {
@@ -12,19 +13,9 @@ const Home: NextPage = () => {
       flexDirection="column"
       justifyContent="flex-start"
     >
+      <NextSeo title="Clone Kumparan" description="Clone Kumparan Apps" />
       <Navigation flex={'0'} />
-      <Box
-        h="100%"
-        maxH="100vh"
-        w="100%"
-        bg="#f7f7f7"
-        display="flex"
-        justifyContent="center"
-      >
-        <Box w="100%" maxW="65vw" bg="yellow">
-          <NextSeo title="Clone Kumparan" description="Clone Kumparan Apps" />
-        </Box>
-      </Box>
+      <Content />
     </Box>
   )
 }
