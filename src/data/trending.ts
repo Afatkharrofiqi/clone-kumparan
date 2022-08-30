@@ -50,45 +50,5 @@ export const trending: Trending[] = [
     totalLikes: 2,
     lastUpdated: new Date(),
     image: 'https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/01gakq6x8mt7nwywvxrxhkjmtr.jpg'
-  },
-  {
-    title: 'Deolipa Yumaran Berencana Laporkan Feni Rose soal Dugaan Pencemaran Nama Baik',
-    createdBy: 'kumparanHITS',
-    comment: false,
-    totalComments: 0,
-    like: true,
-    totalLikes: 2,
-    lastUpdated: new Date(),
-    image: 'https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/01gakq6x8mt7nwywvxrxhkjmtr.jpg'
-  },
-  {
-    title: 'Deolipa Yumaran Berencana Laporkan Feni Rose soal Dugaan Pencemaran Nama Baik',
-    createdBy: 'kumparanHITS',
-    comment: false,
-    totalComments: 0,
-    like: true,
-    totalLikes: 2,
-    lastUpdated: new Date(),
-    image: 'https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/01gakq6x8mt7nwywvxrxhkjmtr.jpg'
-  },
-  {
-    title: 'Deolipa Yumaran Berencana Laporkan Feni Rose soal Dugaan Pencemaran Nama Baik',
-    createdBy: 'kumparanHITS',
-    comment: false,
-    totalComments: 0,
-    like: true,
-    totalLikes: 2,
-    lastUpdated: new Date(),
-    image: 'https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/01gakq6x8mt7nwywvxrxhkjmtr.jpg'
-  },
-  {
-    title: 'Deolipa Yumaran Berencana Laporkan Feni Rose soal Dugaan Pencemaran Nama Baik',
-    createdBy: 'kumparanHITS',
-    comment: false,
-    totalComments: 0,
-    like: true,
-    totalLikes: 2,
-    lastUpdated: new Date(),
-    image: 'https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/01gakq6x8mt7nwywvxrxhkjmtr.jpg'
-  },
+  }
 ];
