@@ -5,13 +5,7 @@ import MainMenu from './MainMenu'
 import SubMenu from './SubMenu'
 import TopBar from './TopBar'
 
-interface NavigationProps {
-  flex: string
-}
-
-const Navigation: FunctionComponent<NavigationProps> = (
-  props: NavigationProps
-) => {
+const Navigation: FunctionComponent = () => {
   return (
     <Box
       h="100%"
@@ -19,7 +13,7 @@ const Navigation: FunctionComponent<NavigationProps> = (
       bg="white"
       display="flex"
       justifyContent="center"
-      {...props}
+      flex={0}
     >
       <Container>
         <TopBar />

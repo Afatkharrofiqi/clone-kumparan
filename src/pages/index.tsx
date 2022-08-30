@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       justifyContent="flex-start"
     >
       <NextSeo title="Clone Kumparan" description="Clone Kumparan Apps" />
-      <Navigation flex={'0'} />
+      <Navigation />
       <Content />
     </Box>
   )
