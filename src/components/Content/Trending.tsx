@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, List, Stack, Text } from '@chakra-ui/react'
+import { Box, Flex, HStack, Text } from '@chakra-ui/react'
 import { FC } from 'react'
 import { BsArrowRightShort } from 'react-icons/bs'
 import { trending } from '../../data/trending'
@@ -15,8 +15,22 @@ const Trending: FC = () => {
         borderBottomWidth={2}
         borderBottomColor="gray.100"
       >
-        <Flex justifyContent="space-between">
-          <Text fontWeight="bold" fontSize="xl">
+        <Flex
+          justifyContent="space-between"
+          position="relative"
+          _before={{
+            position: 'absolute',
+            left: '-10px',
+            right: '5px',
+            top: '0.3rem',
+            width: '0.4rem',
+            borderRadius: '2px',
+            height: '24px',
+            background: 'red',
+            content: '""',
+          }}
+        >
+          <Text fontWeight="bold" fontSize="24">
             Trending
           </Text>
           <HStack>
@@ -33,7 +47,7 @@ const Trending: FC = () => {
         <Box borderBottomRadius={10} bgColor="white" p={2}>
           {trending.map((data, index) => {
             return (
-              <Box key={index}>
+              <Box key={index} h={100}>
                 <Text>{data.title}</Text>
               </Box>
             )
