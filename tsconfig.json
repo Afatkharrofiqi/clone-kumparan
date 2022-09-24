@@ -13,6 +13,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "@component/*": ["src/components/*"],
+      "@models/*": ["src/models/*"],
+      "@data/*": ["src/data/*"],
+      "@pages/": ["src/pages/*"],
+      "@styles/*": ["src/styles/*"]
+    },
     "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "lint-staged.config.js"],

@@ -1,22 +1,16 @@
-import { Box } from '@chakra-ui/react'
+import { Stack } from '@chakra-ui/react'
+import Content from '@component/Content'
+import Navigation from '@component/Navigation'
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
-import Content from '../components/Content/Content'
-import Navigation from '../components/Navigation/Navigation'
 
 const Home: NextPage = () => {
   return (
-    <Box
-      h="100vh"
-      display="flex"
-      alignContent="center"
-      flexDirection="column"
-      justifyContent="flex-start"
-    >
+    <Stack bg="#f7f7f7" h={'100vh'}>
       <NextSeo title="Clone Kumparan" description="Clone Kumparan Apps" />
       <Navigation />
       <Content />
-    </Box>
+    </Stack>
   )
 }
 

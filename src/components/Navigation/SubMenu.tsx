@@ -1,6 +1,6 @@
 import { Stack, Text } from '@chakra-ui/react'
+import { subHeadingData } from '@data/subHeadingData'
 import { FunctionComponent } from 'react'
-import { subHeadingData } from '../../data/subHeadingData'
 
 const SubMenu: FunctionComponent = () => {
   return (

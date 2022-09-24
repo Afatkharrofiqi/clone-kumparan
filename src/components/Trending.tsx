@@ -10,8 +10,7 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react'
-import { FC } from 'react'
-import { trending } from '../../data/trending'
+import { CSSProperties, FC } from 'react'
 import SimpleBar from 'simplebar-react'
 import 'simplebar/dist/simplebar.min.css'
 import { FiArrowRight } from 'react-icons/fi'
@@ -20,13 +19,20 @@ import { BsHeart, BsHeartFill } from 'react-icons/bs'
 import { GoKebabVertical } from 'react-icons/go'
 import { FaRegComment } from 'react-icons/fa'
 import moment from 'moment'
+import { trending } from '@data/trending'
+import CardInfo from '@component/CardInfo'
 
-const Trending: FC = () => {
+interface TrendingCard {
+  style?: CSSProperties | undefined
+}
+
+const Trending: FC<TrendingCard> = (style) => {
   return (
-    <Box>
+    <Box {...style}>
       <Box
-        borderTopRadius={10}
         bgColor="white"
+        position='relative'
+        overflow='hidden'
         py={2}
         borderBottomWidth={2}
         borderBottomColor="gray.100"
@@ -56,50 +62,16 @@ const Trending: FC = () => {
           </HStack>
         </Flex>
       </Box>
-      <SimpleBar
-        style={{
-          maxHeight: '70vh',
-        }}
-      >
-        <Box borderBottomRadius={10} bgColor="white" p={2}>
+      <SimpleBar style={{
+        height: '42.5rem'
+      }}>
+        <Box bgColor="white" p={2} position='relative'>
           {trending.map((data, index) => {
             return (
               <Box key={index} m={2}>
                 <Grid templateColumns="repeat(4, 1fr)" gap={2}>
                   <GridItem colSpan={3}>
-                    <Stack direction="column">
-                      <Text fontWeight="500">{data.title}</Text>
-                      <Stack direction="row" alignItems="center">
-                        <Image
-                          src={data.avatar}
-                          borderRadius="full"
-                          border={'1px solid gray'}
-                          boxSize="1rem"
-                        />
-                        <Text>{data.createdBy}</Text>
-                        <HiBadgeCheck color="teal" />
-                      </Stack>
-                      <Flex direction="row" alignItems="center" gap={7}>
-                        <Stack direction="row" alignItems="center">
-                          {data.totalLikes > 0 ? (
-                            <BsHeartFill color="red" />
-                          ) : (
-                            <BsHeart />
-                          )}
-                          <Text fontSize="sm">{data.totalLikes}</Text>
-                        </Stack>
-                        <Stack direction="row" alignItems="center">
-                          <FaRegComment />
-                          <Text fontSize="sm">{data.totalComments}</Text>
-                        </Stack>
-                        <Stack direction="row" alignItems="center">
-                          <Text fontSize="sm">
-                            {moment(data.lastUpdated).format('DD MMM')}
-                          </Text>
-                        </Stack>
-                        <GoKebabVertical />
-                      </Flex>
-                    </Stack>
+                    <CardInfo data={data} textColor='black' />
                   </GridItem>
                   <GridItem>
                     <AspectRatio ratio={4 / 4}>

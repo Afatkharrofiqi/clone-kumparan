@@ -1,6 +1,6 @@
 import { IconButton, Stack, Text } from '@chakra-ui/react'
+import { headingData } from '@data/headingData'
 import { FunctionComponent } from 'react'
-import { headingData } from '../../data/headingData'
 import { GoKebabVertical } from 'react-icons/go'
 
 const MainMenu: FunctionComponent = () => {

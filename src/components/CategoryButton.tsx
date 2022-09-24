@@ -1,6 +1,6 @@
 import { Button, ButtonGroup, Stack } from '@chakra-ui/react'
+import { categoryContent } from '@data/categoryContent'
 import { FC } from 'react'
-import { categoryContent } from '../../data/categoryContent'
 
 const CategoryButton: FC = () => {
   return (
