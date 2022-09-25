@@ -25,8 +25,8 @@ const Trending: FC<TrendingCard> = (style) => {
     <Box {...style}>
       <Box
         bgColor="white"
-        position='relative'
-        overflow='hidden'
+        position="relative"
+        overflow="hidden"
         py={2}
         borderBottomWidth={2}
         borderBottomColor="gray.100"
@@ -56,20 +56,22 @@ const Trending: FC<TrendingCard> = (style) => {
           </HStack>
         </Flex>
       </Box>
-      <SimpleBar style={{
-        height: '42.3rem'
-      }}>
-        <Box bgColor="white" p={2} position='relative'>
+      <SimpleBar
+        style={{
+          height: '42.3rem',
+        }}
+      >
+        <Box bgColor="white" p={2} position="relative">
           {trending.map((data, index) => {
             return (
               <Box key={index} m={2}>
                 <Grid templateColumns="repeat(4, 1fr)" gap={2}>
                   <GridItem colSpan={3}>
-                    <CardInfo data={data} textColor='black' />
+                    <CardInfo data={data} textColor="black" />
                   </GridItem>
                   <GridItem>
                     <AspectRatio ratio={4 / 4}>
-                      <Image src={data.image} rounded={10} />
+                      <Image src={data.image} rounded={10} alt={data.title} />
                     </AspectRatio>
                   </GridItem>
                 </Grid>
