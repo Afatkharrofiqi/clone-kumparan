@@ -1,6 +1,6 @@
-import { Trending } from '../models/Trending'
+import { News } from '../models/News'
 
-export const trending: Trending[] = [
+export const trending: News[] = [
   {
     title: 'Putri Mengaku Dilecehkan Yosua di Magelang',
     createdBy: 'kumparanNEWS',

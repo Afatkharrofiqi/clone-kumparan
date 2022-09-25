@@ -1,4 +1,4 @@
-export interface Trending {
+export interface News {
   title: string
   createdBy: string
   avatar: string

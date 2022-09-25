@@ -1,5 +1,5 @@
 import { Flex, HStack, Image, Stack, Text } from "@chakra-ui/react";
-import { Trending } from "@models/Trending";
+import { News } from "@models/News";
 import moment from "moment";
 import { FC } from "react";
 import { BsHeart, BsHeartFill } from "react-icons/bs";
@@ -8,7 +8,7 @@ import { GoKebabVertical } from "react-icons/go";
 import { HiBadgeCheck } from "react-icons/hi";
 
 interface CardInfo {
-  data: Trending,
+  data: News,
   textColor: string
 }
 

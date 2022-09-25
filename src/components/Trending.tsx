@@ -7,18 +7,12 @@ import {
   GridItem,
   HStack,
   Image,
-  Stack,
   Text,
 } from '@chakra-ui/react'
 import { CSSProperties, FC } from 'react'
 import SimpleBar from 'simplebar-react'
 import 'simplebar/dist/simplebar.min.css'
 import { FiArrowRight } from 'react-icons/fi'
-import { HiBadgeCheck } from 'react-icons/hi'
-import { BsHeart, BsHeartFill } from 'react-icons/bs'
-import { GoKebabVertical } from 'react-icons/go'
-import { FaRegComment } from 'react-icons/fa'
-import moment from 'moment'
 import { trending } from '@data/trending'
 import CardInfo from '@component/CardInfo'
 
@@ -63,7 +57,7 @@ const Trending: FC<TrendingCard> = (style) => {
         </Flex>
       </Box>
       <SimpleBar style={{
-        height: '42.5rem'
+        height: '42.3rem'
       }}>
         <Box bgColor="white" p={2} position='relative'>
           {trending.map((data, index) => {
